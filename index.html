@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodCraft Studio | Custom Wood & Epoxy Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-tree"></i>
+                <span>WoodCraft Studio</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#customizer">Design Your Table</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-contact">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Handcrafted Wood & Epoxy Masterpieces</h1>
+            <p class="hero-subtitle">Custom tables, cabinets, and furniture made with passion. Bring your vision to life
+                with our stunning epoxy resin designs.</p>
+            <div class="hero-cta">
+                <a href="#customizer" class="btn btn-primary">Design Your Table</a>
+                <a href="#products" class="btn btn-outline">View Our Work</a>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Custom Designs</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <span>Delivery Available</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Premium Quality</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Collection</span>
+                <h2>What We Craft</h2>
+                <p>From elegant dining tables to functional cabinets, every piece is made with care and precision.</p>
+            </div>
+
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="epoxy">Epoxy Tables</button>
+                <button class="filter-btn" data-filter="wood">Wood Furniture</button>
+                <button class="filter-btn" data-filter="metal">Iron & Metal</button>
+                <button class="filter-btn" data-filter="storage">Storage</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Epoxy Products -->
+                <div class="product-card" data-category="epoxy">
+                    <div class="product-image">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20handcrafted%20walnut%20coffee%20table%20with%20a%20flowing%20blue%20epoxy%20river%20through%20the%20center%2C%20modern%20living%20room%2C%20photorealistic%20furniture%20photography%2C%20warm%20natural%20light%2C%20premium%20craftsmanship&image_size=landscape_4_3"
+                            alt="River Coffee Table" loading="lazy">
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>River Coffee Table</h3>
+                        <p class="product-desc">Small coffee table with flowing epoxy river design. Perfect for living
+                            rooms.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 2-3 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="River Coffee Table">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="epoxy">
+                    <div class="product-image">
+                        <img src="images/ocean_dining_table.png"
+                            alt="Ocean Dining Table" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ocean Dining Table</h3>
+                        <p class="product-desc">Dining table with ocean-wave epoxy pattern. Seats 6-8 people.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 3-4 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Ocean Dining Table">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="epoxy">
+                    <div class="product-image">
+                        <img src="images/golden_side_table.png"
+                            alt="Golden Resin Side Table" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Golden Resin Side Table</h3>
+                        <p class="product-desc">Compact side table with golden amber epoxy accents.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 2 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Golden Resin Side Table">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="epoxy">
+                    <div class="product-image">
+                        <img src="images/galaxy_nightstand.png"
+                            alt="Galaxy Nightstand" loading="lazy">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Galaxy Nightstand</h3>
+                        <p class="product-desc">Bedside table with deep purple galaxy epoxy effect.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 2 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Galaxy Nightstand">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Wood Furniture -->
+                <div class="product-card" data-category="wood">
+                    <div class="product-image">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solid%20oak%20dining%20chair%20with%20a%20smooth%20finish%2C%20ergonomic%20backrest%2C%20and%20minimal%20modern%20styling%2C%20photorealistic%20furniture%20product%20photo%2C%20warm%20natural%20light&image_size=landscape_4_3"
+                            alt="Classic Oak Chair" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Oak Chair</h3>
+                        <p class="product-desc">Solid oak dining chair with smooth finish and ergonomic design.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 1-2 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Classic Oak Chair">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wood">
+                    <div class="product-image">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=premium%20solid%20walnut%20dining%20table%20showing%20rich%20natural%20wood%20grain%2C%20elegant%20modern%20dining%20room%2C%20photorealistic%20furniture%20photography%2C%20warm%20daylight&image_size=landscape_4_3"
+                            alt="Walnut Dining Table" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Walnut Dining Table</h3>
+                        <p class="product-desc">Premium walnut dining table with natural wood grain showcase.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 3-4 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Walnut Dining Table">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wood">
+                    <div class="product-image">
+                        <img src="images/rustic_pine_bench.png"
+                            alt="Rustic Pine Bench" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rustic Pine Bench</h3>
+                        <p class="product-desc">Handcrafted pine bench with rustic farmhouse style.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 1-2 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Rustic Pine Bench">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Iron & Metal -->
+                <div class="product-card" data-category="metal">
+                    <div class="product-image">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=decorative%20black%20iron%20plant%20stand%20with%20multiple%20tiers%20holding%20indoor%20plants%2C%20bright%20home%20interior%20corner%2C%20photorealistic%20product%20photo&image_size=landscape_4_3"
+                            alt="Iron Plant Stand" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Iron Plant Stand</h3>
+                        <p class="product-desc">Decorative iron stand for indoor plants. Multiple tier options.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 1 week</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Iron Plant Stand">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="metal">
+                    <div class="product-image">
+                        <img src="images/metal_table_legs.png"
+                            alt="Metal Table Legs" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Metal Table Legs</h3>
+                        <p class="product-desc">Custom iron table legs for any table top. Industrial style.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 1 week</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Metal Table Legs">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Storage -->
+                <div class="product-card" data-category="storage">
+                    <div class="product-image">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=custom%20built%20wooden%20cabinet%20with%20shelves%20and%20drawers%2C%20handcrafted%20walnut%20storage%20cabinet%2C%20elegant%20home%20interior%2C%20photorealistic%20furniture%20photography&image_size=landscape_4_3"
+                            alt="Wooden Cabinet" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wooden Cabinet</h3>
+                        <p class="product-desc">Custom-built wooden cabinet with shelves and drawers.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 3-4 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Wooden Cabinet">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="storage">
+                    <div class="product-image">
+                        <img src="images/bookshelf_unit.png"
+                            alt="Bookshelf Unit" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bookshelf Unit</h3>
+                        <p class="product-desc">Wall-mounted or freestanding bookshelf with customizable shelves.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 2-3 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Bookshelf Unit">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="storage">
+                    <div class="product-image">
+                        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=multi%20purpose%20wooden%20kitchen%20storage%20rack%20for%20pantry%20organization%2C%20open%20shelves%20with%20baskets%20and%20jars%2C%20bright%20kitchen%2C%20photorealistic%20furniture%20product%20photo&image_size=landscape_4_3"
+                            alt="Kitchen Storage Rack" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kitchen Storage Rack</h3>
+                        <p class="product-desc">Multi-purpose storage rack for kitchen or pantry organization.</p>
+                        <div class="product-meta">
+                            <span class="delivery-time"><i class="far fa-clock"></i> 2 weeks</span>
+                            <span class="price-range">Custom Quote</span>
+                        </div>
+                        <button class="btn-inquiry" data-product="Kitchen Storage Rack">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Epoxy Customizer Section -->
+    <section id="customizer" class="customizer dark-theme">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Design Studio</span>
+                <h2>Design Your Epoxy Table</h2>
+                <p>Choose your table type and epoxy color to visualize your custom piece. Every table is made to order.</p>
+            </div>
+
+            <div class="customizer-layout">
+                <!-- Preview Area -->
+                <div class="customizer-preview">
+                    <div class="preview-table-wrapper" id="previewWrapper">
+                        <div class="preview-table" id="previewTable">
+                            <div class="table-surface" id="tableSurface">
+                                <div class="epoxy-layer" id="epoxyLayer"></div>
+                                <div class="wood-edge left"></div>
+                                <div class="wood-edge right"></div>
+                            </div>
+                            <div class="table-legs" id="tableLegs">
+                                <div class="leg leg-1"></div>
+                                <div class="leg leg-2"></div>
+                                <div class="leg leg-3"></div>
+                                <div class="leg leg-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3 id="previewName">River Coffee Table</h3>
+                        <p id="previewDesc">Small coffee table with flowing epoxy river design</p>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="customizer-controls glassmorphism">
+                    <div class="control-group">
+                        <label>Table Type</label>
+                        <div class="table-options">
+                            <button class="table-option active" data-table="coffee" data-name="River Coffee Table"
+                                data-desc="Small coffee table with flowing epoxy river design">
+                                <div class="option-icon">☕</div>
+                                <span>Coffee Table</span>
+                            </button>
+                            <button class="table-option" data-table="dining" data-name="Ocean Dining Table"
+                                data-desc="Dining table with ocean-wave epoxy pattern. Seats 6-8 people.">
+                                <div class="option-icon">🍽️</div>
+                                <span>Dining Table</span>
+                            </button>
+                            <button class="table-option" data-table="side" data-name="Golden Resin Side Table"
+                                data-desc="Compact side table with golden amber epoxy accents.">
+                                <div class="option-icon">🛋️</div>
+                                <span>Side Table</span>
+                            </button>
+                            <button class="table-option" data-table="nightstand" data-name="Galaxy Nightstand"
+                                data-desc="Bedside table with deep galaxy epoxy effect">
+                                <div class="option-icon">🌙</div>
+                                <span>Nightstand</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Epoxy Color</label>
+                        <div class="color-options">
+                            <button class="color-option active" data-color="blue"
+                                style="background: linear-gradient(135deg, #1e3a5f, #4a90c2, #87ceeb);">
+                                <span class="color-name">Ocean Blue</span>
+                            </button>
+                            <button class="color-option" data-color="green"
+                                style="background: linear-gradient(135deg, #1a472a, #3d8b4a, #7ec850);">
+                                <span class="color-name">Forest Green</span>
+                            </button>
+                            <button class="color-option" data-color="amber"
+                                style="background: linear-gradient(135deg, #8B4513, #DAA520, #FFD700);">
+                                <span class="color-name">Golden Amber</span>
+                            </button>
+                            <button class="color-option" data-color="purple"
+                                style="background: linear-gradient(135deg, #2d1b4e, #6b3fa0, #b47dd1);">
+                                <span class="color-name">Galaxy Purple</span>
+                            </button>
+                            <button class="color-option" data-color="red"
+                                style="background: linear-gradient(135deg, #6b1a1a, #c23b22, #e85d4e);">
+                                <span class="color-name">Ruby Red</span>
+                            </button>
+                            <button class="color-option" data-color="black"
+                                style="background: linear-gradient(135deg, #1a1a1a, #3d3d3d, #666666);">
+                                <span class="color-name">Onyx Black</span>
+                            </button>
+                            <button class="color-option" data-color="white"
+                                style="background: linear-gradient(135deg, #d4d4d4, #f0f0f0, #ffffff);">
+                                <span class="color-name">Pearl White</span>
+                            </button>
+                            <button class="color-option" data-color="turquoise"
+                                style="background: linear-gradient(135deg, #0d5c5c, #20b2aa, #40e0d0);">
+                                <span class="color-name">Turquoise</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Wood Type</label>
+                        <div class="wood-options">
+                            <button class="wood-option active" data-wood="walnut" style="background: #5d4e37;">
+                                <span>Walnut</span>
+                            </button>
+                            <button class="wood-option" data-wood="oak" style="background: #8b6f47;">
+                                <span>Oak</span>
+                            </button>
+                            <button class="wood-option" data-wood="cherry" style="background: #7a3e2e;">
+                                <span>Cherry</span>
+                            </button>
+                            <button class="wood-option" data-wood="maple" style="background: #d4a76a;">
+                                <span>Maple</span>
+                            </button>
+                            <button class="wood-option" data-wood="pine" style="background: #c4a77d;">
+                                <span>Pine</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="customizer-summary">
+                        <div class="summary-row">
+                            <span>Estimated Time:</span>
+                            <span id="estimateTime">2-3 weeks</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Dimensions:</span>
+                            <span id="estimateDimensions">80cm x 60cm x 45cm</span>
+                        </div>
+                        <button class="btn btn-primary btn-full" id="customizerInquiry">
+                            <i class="fas fa-paper-plane"></i> Request Quote for This Design
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2>Gallery</h2>
+                <p>See what we've crafted for our happy clients.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <div class="gallery-image"><img
+                            src="images/ocean_dining_table.png"
+                            alt="Ocean Dining Table" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Ocean Dining Table</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"><img
+                            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20handcrafted%20walnut%20coffee%20table%20with%20a%20flowing%20blue%20epoxy%20river%20through%20the%20center%2C%20modern%20living%20room%2C%20photorealistic%20furniture%20photography%2C%20warm%20natural%20light%2C%20premium%20craftsmanship&image_size=landscape_4_3"
+                            alt="River Coffee Table" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>River Coffee Table</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"><img
+                            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=solid%20oak%20dining%20chair%20with%20a%20smooth%20finish%2C%20ergonomic%20backrest%2C%20and%20minimal%20modern%20styling%2C%20photorealistic%20furniture%20product%20photo%2C%20warm%20natural%20light&image_size=landscape_4_3"
+                            alt="Classic Oak Chair" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Classic Oak Chair</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"><img
+                            src="images/golden_side_table.png"
+                            alt="Golden Resin Side Table" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Golden Resin Side Table</span>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <div class="gallery-image"><img
+                            src="images/galaxy_nightstand.png"
+                            alt="Galaxy Nightstand" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Galaxy Nightstand</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"><img
+                            src="images/bookshelf_unit.png"
+                            alt="Bookshelf Unit" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Bookshelf Unit</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"><img
+                            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=decorative%20black%20iron%20plant%20stand%20with%20multiple%20tiers%20holding%20indoor%20plants%2C%20bright%20home%20interior%20corner%2C%20photorealistic%20product%20photo&image_size=landscape_4_3"
+                            alt="Iron Plant Stand" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Iron Plant Stand</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"><img
+                            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=multi%20purpose%20wooden%20kitchen%20storage%20rack%20for%20pantry%20organization%2C%20open%20shelves%20with%20baskets%20and%20jars%2C%20bright%20kitchen%2C%20photorealistic%20furniture%20product%20photo&image_size=landscape_4_3"
+                            alt="Kitchen Storage Rack" loading="lazy"></div>
+                    <div class="gallery-overlay">
+                        <span>Kitchen Storage Rack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-image">
+                    <div class="workshop-image"><img
+                            src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?auto=format&fit=crop&w=800&q=80"
+                            alt="WoodCraft Workshop" loading="lazy"></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2>Crafted with Passion, Built to Last</h2>
+                    <p>We are a dedicated woodworking studio specializing in custom furniture and epoxy resin creations.
+                        Every piece we make is handcrafted with attention to detail and a commitment to quality.</p>
+                    <p>Whether you need a stunning epoxy river table for your living room, custom cabinets for your
+                        kitchen, or elegant chairs for your dining area, we bring your vision to life.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Online Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Years of experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Custom Orders</span>
+                        </div>
+                    </div>
+                    <div class="about-features-list">
+                        <div class="about-feature">
+                            <i class="fas fa-hammer"></i>
+                            <div>
+                                <h4>Handcrafted</h4>
+                                <p>Every piece is made by hand, not mass-produced</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-palette"></i>
+                            <div>
+                                <h4>Custom Colors</h4>
+                                <p>Choose from 8+ epoxy colors and different wood types</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-ruler-combined"></i>
+                            <div>
+                                <h4>Any Size</h4>
+                                <p>We build to your exact specifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Inquiry Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2>Request a Quote</h2>
+                <p>Tell us what you need and we'll get back to you with timing and pricing.</p>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>Fastest response for inquiries</p>
+                            <a href="https://wa.me/923225044873" target="_blank">Message Us</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Send detailed requirements</p>
+                            <a href="mailto:saleemabdullah67@gmail.com">saleemabdullah67@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Visit our workshop</p>
+                            <span>Tarlai, Islamabad</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday</p>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="inquiryForm" action="https://formspree.io/f/xbdvaylb" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone / WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567">
+                            </div>
+                            <div class="form-group">
+                                <label for="product">Product Interested In *</label>
+                                <select id="product" name="product" required>
+                                    <option value="">Select a product</option>
+                                    <option value="River Coffee Table">River Coffee Table</option>
+                                    <option value="Ocean Dining Table">Ocean Dining Table</option>
+                                    <option value="Golden Resin Side Table">Golden Resin Side Table</option>
+                                    <option value="Galaxy Nightstand">Galaxy Nightstand</option>
+                                    <option value="Custom Epoxy Table">Custom Epoxy Table</option>
+                                    <option value="Walnut Dining Table">Walnut Dining Table</option>
+                                    <option value="Classic Oak Chair">Classic Oak Chair</option>
+                                    <option value="Rustic Pine Bench">Rustic Pine Bench</option>
+                                    <option value="Iron Plant Stand">Iron Plant Stand</option>
+                                    <option value="Wooden Cabinet">Wooden Cabinet</option>
+                                    <option value="Bookshelf Unit">Bookshelf Unit</option>
+                                    <option value="Kitchen Storage Rack">Kitchen Storage Rack</option>
+                                    <option value="Custom Project">Custom Project (Describe below)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" id="epoxyOptions" style="display:none;">
+                            <label>Epoxy Color Preference</label>
+                            <div class="form-color-options">
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Ocean Blue">
+                                    <span
+                                        style="background: linear-gradient(135deg, #1e3a5f, #4a90c2, #87ceeb);"></span>
+                                    <small>Ocean Blue</small>
+                                </label>
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Forest Green">
+                                    <span
+                                        style="background: linear-gradient(135deg, #1a472a, #3d8b4a, #7ec850);"></span>
+                                    <small>Forest Green</small>
+                                </label>
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Golden Amber">
+                                    <span
+                                        style="background: linear-gradient(135deg, #8B4513, #DAA520, #FFD700);"></span>
+                                    <small>Golden Amber</small>
+                                </label>
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Galaxy Purple">
+                                    <span
+                                        style="background: linear-gradient(135deg, #2d1b4e, #6b3fa0, #b47dd1);"></span>
+                                    <small>Galaxy Purple</small>
+                                </label>
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Ruby Red">
+                                    <span
+                                        style="background: linear-gradient(135deg, #6b1a1a, #c23b22, #e85d4e);"></span>
+                                    <small>Ruby Red</small>
+                                </label>
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Turquoise">
+                                    <span
+                                        style="background: linear-gradient(135deg, #0d5c5c, #20b2aa, #40e0d0);"></span>
+                                    <small>Turquoise</small>
+                                </label>
+                                <label class="form-color-option">
+                                    <input type="radio" name="epoxy_color" value="Not Sure">
+                                    <span style="background: #ddd;"></span>
+                                    <small>Not Sure</small>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dimensions">Preferred Dimensions</label>
+                            <input type="text" id="dimensions" name="dimensions"
+                                placeholder="e.g., 120cm x 80cm x 75cm or Standard">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us more about your project. Any specific design preferences, wood type, delivery location, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range (Optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="Under PKR10000">Under 10,000 PKR</option>
+                                <option value="PKR10000 - PKR20000">10,000 - 20,000 PKR</option>
+                                <option value="PKR20000 - PKR50000">20,000 - 50,000 PKR</option>
+                                <option value="Over PKR50000">Over 50,000 PKR</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Inquiry
+                        </button>
+                        <p class="form-note">We typically respond within 24-48 hours during working hours. No obligation
+                            - free consultation!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <i class="fas fa-tree"></i>
+                        <span>WoodCraft Studio</span>
+                    </div>
+                    <p>Handcrafted wood and epoxy furniture made with passion. Custom orders welcome.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#customizer">Design Your Table</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Get Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Epoxy Tables</a></li>
+                        <li><a href="#products">Wood Furniture</a></li>
+                        <li><a href="#products">Iron Stands</a></li>
+                        <li><a href="#products">Cabinets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +92 322 5044873</p>
+                    <p><i class="fas fa-envelope"></i> saleemabdullah67@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tarlai, Islamabad, Pakistan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                        <p>&copy; 2026 WoodCraft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Inquiry Sent!</h3>
+            <p>Thank you for your interest. We'll get back to you within 24-48 hours during working hours, with pricing
+                and timeline.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Great!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
