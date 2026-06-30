@@ -953,6 +953,7 @@ section {
 
 .about-image {
     position: relative;
+    min-width: 0;
 }
 
 .workshop-image {
@@ -962,6 +963,13 @@ section {
     background: linear-gradient(135deg, #5d4e37 0%, #7a6b52 30%, #5d4e37 60%, #8b7355 100%);
     position: relative;
     overflow: hidden;
+}
+
+.workshop-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .workshop-image::before {
@@ -997,6 +1005,13 @@ section {
     color: var(--text-medium);
     margin-bottom: 20px;
     line-height: 1.7;
+}
+
+.about-content,
+.about-stats,
+.about-feature,
+.about-feature > div {
+    min-width: 0;
 }
 
 .about-stats {
@@ -1541,6 +1556,10 @@ section {
     
     .about-layout {
         gap: 40px;
+    }
+
+    .about-content {
+        overflow-wrap: anywhere;
     }
     
     .workshop-image {
